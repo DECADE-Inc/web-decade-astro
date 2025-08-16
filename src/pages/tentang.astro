@@ -1,0 +1,12 @@
+---
+import Hero from "../components/Tentang/Hero/Hero.astro";
+import Profile from "../components/Tentang/Profile/Profile";
+import VisiMisi from "../components/Tentang/VisiMisi/VisiMisi";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Tentang">
+    <Hero />
+    <VisiMisi client:load />
+    <Profile client:load />
+</Layout> 

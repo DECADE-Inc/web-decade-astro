@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+import lDesign from "../../assets/layanan/l-design.png";
+import TombolJelajah from "../TombolJelajah";
+---
+
+
+<section class="font-Hammersmith-One py-8">
+    <div class="flex flex-col lg:flex-row gap-2 lg:gap-32 items-center justify-between dark:text-cyan-400">
+        <!-- Gambar -->
+        <div class="relative w-full lg:w-1/2">
+            <Image src={lDesign} alt="gambar desain" class="w-full h-auto object-contain">
+        </div>
+
+        <!-- Teks -->
+        <div class="w-full lg:w-1/2 pr-4">
+            <div
+                class="uppercase font-bold text-2xl sm:text-5xl lg:text-6xl xl:text-5xl leading-snug lg:leading-[5.5rem] text-right ">
+                <div><span class="bg-black text-primary dark:text-black dark:bg-white">bingung</span> buat</div>
+                <span class="bg-black text-primary dark:text-black dark:bg-white">desain grafis</span>
+                <div>untuk <span class="bg-black text-primary dark:text-black dark:bg-white">promosi</span></div>
+                <div>kami bisa <span class="bg-black text-primary dark:text-black dark:bg-white">bantu</span></div>
+                <span class="bg-black text-primary dark:text-black dark:bg-white">buatkan</span>
+            </div>
+
+            <div class="leading-tight uppercase text-lightGray mt-4 mb-6 text-right text-xs sm:text-base">
+                <p>tuangkan semua ide anda dan kami</p>
+                <p>akan mewujudkan semuanya</p>
+            </div>
+
+            <div class="flex justify-end">
+                <TombolJelajah href="/portofolio/design" />
+            </div>
+        </div>
+    </div>
+</section>

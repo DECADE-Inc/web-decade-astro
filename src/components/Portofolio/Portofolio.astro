@@ -1,0 +1,23 @@
+---
+import PortofolioList from "./PortofolioList/PortofolioList";
+---
+
+<div class="flex flex-col">
+  <section
+    class="h-screen flex flex-col justify-center items-center space-y-15 bg-cover font-Montserrat "
+    style="background-image: url('/img/portofolio/hero-background.png');"
+  >
+    <div class="flex flex-col items-center text-center mt-20 mx-4">
+      <span class="text-white text-4xl md:text-[110px] font-extrabold"
+        >Portofolio</span
+      >
+      <span class="max-w-md text-white text-base md:text-2xl font-medium"
+        >Setiap karya dan proyek adalah hasil kolaborasi, eksplorasi ide, dan
+        dedikasi untuk terus berkembang</span
+      >
+    </div>
+  </section>
+  <section class="font-Montserrat flex items-center">
+    <PortofolioList />
+  </section>
+</div>

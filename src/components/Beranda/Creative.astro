@@ -1,0 +1,27 @@
+---
+import leftEye from "../../assets/beranda/left-eye.png";
+import rightEye from "../../assets/beranda/right-eye.png";
+import hand from "../../assets/beranda/hand.png";
+import Image from "astro/components/Image.astro";
+import logoKomunitas from "../../assets/beranda/logo-komunitas-transparent.png"
+
+---
+
+<section class="container p-6 my-8 md:mt-32 mx-auto">
+    <div class="font-janger text-center text-5xl md:text-6xl mb-16 drop-shadow-2xl dark:text-white">
+        <div>Creative</div>
+        <div>Thinking</div>
+    </div>
+    <div class="flex flex-col md:flex-row gap-16 place-items-center md:place-content-center">
+        <div class="hidden md:flex w-[250px] min-h-[350px] rounded-lg bg-gradient-to-b from-lightGray to-white shadow-sm  justify-center items-center">
+            <Image src={leftEye} class="block w-3/4" alt="mata kiri">
+        </div>
+        <div class="w-[250px] min-h-[350px] rounded-lg bg-gradient-to-b from-lightGray to-white shadow-sm relative">
+            <Image src={logoKomunitas} class="w-1/2 mt-3 mx-auto block z-10 relative" alt="logo komuni">
+            <Image src={hand} class="absolute bottom-0 " alt="gambar tangan">
+        </div>
+        <div class="hidden md:flex w-[250px] min-h-[350px] rounded-lg bg-gradient-to-b from-lightGray to-white shadow-sm  justify-center items-center">
+            <Image src={rightEye} class="block w-3/4" alt="mata kanan">
+        </div>
+    </div>
+</section>

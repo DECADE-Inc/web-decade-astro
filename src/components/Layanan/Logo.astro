@@ -1,0 +1,39 @@
+---
+import { Image } from "astro:assets";
+import fotoKiri from "../../assets/layanan/image8.png";
+import logoBlack from "../../assets/layanan/logo-black.png"
+import logoBlue from "../../assets/layanan/logo-blue.png"
+import fotoKanan from "../../assets/layanan/image9.png"
+import TombolJelajah from "../TombolJelajah";
+---
+
+
+<section class="mt-10 mb-10">
+    <!-- Judul -->
+    <div
+        class="uppercase font-bold text-3xl sm:text-4xl md:text-5xl lg:text-5xl leading-snug lg:leading-[5.5rem] text-center dark:text-cyan-400">
+        <div>ingin <span class="bg-black text-primary dark:text-black dark:bg-white">membuat logo</span> yang</div>
+        <div>menggambarkan <span class="bg-black text-primary dark:text-black dark:bg-white">kualitas</span></div>
+        <div>kami <span class="bg-black text-primary dark:text-black dark:bg-white">buatkan</span></div>
+    </div>
+
+    <!-- Deskripsi + Tombol -->
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6 md:gap-16 mt-6 text-center md:text-left">
+        <div class="leading-tight uppercase text-lightGray text-sm sm:text-base">
+            <p>Tuangkan semua ide anda kepada kami dan kami</p>
+            <p>akan mewujudkan semuanya</p>
+        </div>
+        <TombolJelajah href="/portofolio/design" />
+    </div>
+
+    <!-- Gambar -->
+    <div class="flex items-center justify-between mt-12  overflow-x-clip">
+        <Image src={fotoKiri} alt="foto_kiri" class="h-auto max-w-[100px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[380px] object-contain" />
+
+        <Image src={logoBlack} alt="logo light" class="object-contain max-w-[60px] sm:max-w-[150px] md:max-w-[180px] lg:max-w-[220px] block dark:hidden" />
+
+        <Image src={logoBlue} alt="logo dark" class="h-auto object-contain max-w-xs hidden dark:block" />
+
+        <Image src={fotoKanan} alt="foto_kanan" class="h-auto max-w-[100px] sm:max-w-[200px] md:max-w-[240px] lg:max-w-[380px] object-contain" />
+    </div>
+</section>

@@ -1,0 +1,33 @@
+---
+import { Image } from "astro:assets";
+import lWeb from "../../assets/layanan/l-web.png";
+import TombolJelajah from "../TombolJelajah";
+---
+
+<section class=" font-Hammersmith-One py-8">
+    <div class="flex flex-col-reverse lg:flex-row gap-2 lg:gap-32 items-center justify-between dark:text-cyan-400">
+        <!-- Text Area -->
+        <div class="w-full lg:w-1/2 pl-4">
+            <!-- Hero Title -->
+            <div class="uppercase text-2xl sm:text-4xl lg:text-5xl font-bold leading-snug lg:leading-loose">
+                <span class="bg-black text-primary dark:text-black dark:bg-white">wujudkan</span>
+                <div>website <span class="bg-black text-primary dark:text-black dark:bg-white">anda</span></div>
+                <div>bersama <span class="bg-black text-primary dark:text-black dark:bg-white">decade</span></div>
+            </div>
+
+            <!-- Hero Description -->
+            <div class="leading-tight uppercase text-lightGray my-4 text-xs sm:text-base">
+                <p>Tuangkan semua ide anda kepada kami dan kami</p>
+                <p>akan mewujudkan semuanya</p>
+            </div>
+
+            <!-- Hero Link -->
+            <TombolJelajah href="/portofolio/website">
+        </div>
+
+        <!-- Hero Image -->
+        <div class="w-full lg:w-1/2">
+            <Image src={lWeb} alt="gambar hero" class="w-full h-auto object-contain" />
+        </div>
+    </div>
+</section>

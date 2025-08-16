@@ -1,0 +1,83 @@
+
+.swiper_container {
+  height: 38rem;
+  padding: 2rem 0;
+  position: relative;
+}
+
+.swiper-slide {
+  width: 22rem;
+  aspect-ratio: 1 / 1; /* kotak biar proporsional */
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100%;
+  border-radius: 2rem;
+  object-fit: cover;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .swiper_container {
+  height: 32rem;
+}
+  .swiper-slide {
+    width: 18rem;
+    aspect-ratio: 3 / 4; /* lebih tinggi */
+  }
+}
+
+/* Mobile Large */
+@media (max-width: 768px) {
+  .swiper_container {
+  height: 32rem;
+}
+  .swiper-slide {
+    width: 20rem;
+    aspect-ratio: 3 / 4;
+  }
+}
+
+/* Mobile Small */
+@media (max-width: 480px) {
+  .swiper_container {
+  height: 24rem;
+}
+  .swiper-slide {
+    width: 12rem;
+    aspect-ratio: 2 / 3;
+  }
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.slider-controler {
+  position: relative;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-pagination {
+  position: relative;
+  margin: 0 auto;
+  width: 15rem !important;
+  bottom: 1rem;
+}
+
+.swiper-pagination .swiper-pagination-bullet {
+  filter: drop-shadow(0px 8px 24px rgba(18, 28, 53, 0.1));
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+  background: black;
+}
