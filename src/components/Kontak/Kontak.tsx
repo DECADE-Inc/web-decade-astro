@@ -25,7 +25,7 @@ export default function KontakComponent({ children }: { children: ReactNode }) {
   const [isError, setIsError] = useState(false);
 
   return (
-    <div className="mt-28 md:mt-42 mb-2 min-h-screen sm:relative pb-16">
+    <div className="mt-28 md:mt-42 mb-2 min-h-screen sm:relative pb-16 px-4 sm:p-0">
       <h2 className="text-2xl text-center mb-4 font-bold tracking-tight dark:text-white">
             Hubungi Kami ✈️
         </h2>
