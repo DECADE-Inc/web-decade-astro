@@ -2,25 +2,44 @@ import { useState } from "react";
 import { cn } from "../../../lib/utils";
 import ProfileItem from "./ProfileItem";
 
+
+import yogaImg from "../../../../public/img/profile/yoga.jpeg"
+import eagelImg from "../../../../public/img/profile/eagel.jpg"
+import divaImg from "../../../../public/img/profile/diva.jpg"
+import aldoImg from "../../../../public/img/profile/aldo.jpg"
+import farjihanImg from "../../../../public/img/profile/farjihan.jpg"
+import putriImg from "../../../../public/img/profile/putri.jpg"
+import wendaImg from "../../../../public/img/profile/wenda.jpg"
+import ranuImg from "../../../../public/img/profile/ranu.jpg"
+import abdulImg from "../../../../public/img/profile/abdul.jpg"
+import dimasImg from "../../../../public/img/profile/dimas.jpg"
+import mayImg from "../../../../public/img/profile/may.jpg"
+import placeholder from "../../../../public/img/profile/profil.png"
+
+
+
+
+
+
 const anggota = {
   founder: [
     {
       id: "founder-1",
       name: "Yoga Ramadhani",
       role: "Founder",
-      image: "img/profile/yoga.jpeg",
+      image: yogaImg.src,
     },
     {
       id: "founder-2",
       name: "Muhammad Eagel Triutama",
       role: "Co-Founder",
-      image: "img/profile/eagel.jpg",
+      image: eagelImg.src,
     },
     {
       id: "founder-3",
       name: "Diva Aryadi",
       role: "Co-Founder",
-      image: "img/profile/diva.jpg",
+      image: divaImg.src,
     },
   ],
   developer: [
@@ -28,73 +47,73 @@ const anggota = {
       id: "developer-1",
       name: "Muhammad Eagel Triutama",
       role: "Team Leader",
-      image: "img/profile/eagel.jpg",
+      image: eagelImg.src,
     },
     {
       id: "developer-2",
       name: "Yoga Ramadhani",
       role: "Member",
-      image: "img/profile/yoga.jpeg",
+      image: yogaImg.src,
     },
     {
       id: "developer-3",
       name: "Dwi Ramadhan Rivaldo",
       role: "Member",
-      image: "img/profile/aldo.jpg",
+      image: aldoImg.src,
     },
     {
       id: "developer-4",
       name: "Farjihan Arlin",
       role: "Member",
-      image: "img/profile/farjihan.jpg",
+      image: farjihanImg.src,
     },
     {
       id: "developer-5",
       name: "Putri Kurnia Sari",
       role: "Member",
-      image: "img/profile/putri.jpg",
+      image: putriImg.src,
     },
     {
       id: "developer-6",
       name: "Wagianto",
       role: "Member",
-      image: "img/profile/profil.png",
+      image: placeholder.src,
     },
     {
       id: "developer-7",
       name: "Wenda",
       role: "Member",
-      image: "img/profile/wenda.jpg",
+      image: wendaImg.src,
     },
     {
       id: "developer-8",
       name: "L P Ranu Kumbolo",
       role: "Member",
-      image: "img/profile/ranu.jpg",
+      image: ranuImg.src,
     },
     {
       id: "developer-9",
       name: "Abdul Hadi",
       role: "Member",
-      image: "img/profile/abdul.jpg",
+      image: abdulImg.src,
     },
     {
       id: "developer-10",
       name: "Abdullah Royhan",
       role: "Member",
-      image: "img/profile/profil.png",
+      image: placeholder.src,
     },
     {
       id: "developer-11",
       name: "Ika Bagus Sunandri",
       role: "Member",
-      image: "img/profile/profil.png",
+      image: placeholder.src,
     },
     {
       id: "developer-12",
       name: "Rendra Jogja Sakti",
       role: "Member",
-      image: "img/profile/profil.png",
+      image: placeholder.src,
     },
   ],
   designer: [
@@ -102,25 +121,25 @@ const anggota = {
       id: "designer-1",
       name: "Diva Aryadi",
       role: "Team Leader",
-      image: "img/profile/diva.jpg",
+      image: divaImg.src,
     },
     {
       id: "designer-2",
       name: "Dimas Pratama",
       role: "Member",
-      image: "img/profile/dimas.jpg",
+      image: dimasImg.src,
     },
     {
       id: "designer-3",
       name: "Masyitah Elwinda",
       role: "Member",
-      image: "img/profile/may.jpg",
+      image: mayImg.src,
     },
     {
       id: "designer-4",
       name: "Muhammad Ardiansyah",
       role: "Member",
-      image: "img/profile/profil.png",
+      image: placeholder.src,
     },
   ],
 };
