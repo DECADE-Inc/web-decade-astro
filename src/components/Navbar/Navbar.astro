@@ -1,36 +1,84 @@
 ---
 import NavbarItem from "./NavbarItem";
+import whatsappImage from "../../../public/icons/whatsapp.png";
+import mailImage from "../../../public/icons/mail.png";
+import Image from "astro/components/Image.astro";
 
 const currentPath = Astro.url.pathname;
 ---
 
 <nav
-    class="m-4 fixed top-0 left-0 right-0 z-20 bg-white rounded-xl drop-shadow-lg border border-gray-200 dark:border-none dark:bg-black dark:drop-shadow-white/40 dark:drop-shadow-lg">
-    <div class="max-w-screen-xl flex flex-wrap items-center  mx-auto px-4 py-2">
-        <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse font-Barlow-Semi-Condensed mr-auto">
-            <span class="self-center text-2xl font-bold whitespace-nowrap dark:text-white">DECADE <span
-                    class="text-lg">inc</span></span>
-        </a>
-        <button data-collapse-toggle="navbar-default" type="button"
-            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
-            aria-controls="navbar-default" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                viewBox="0 0 17 14">
-                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    d="M1 1h15M1 7h15M1 13h15" />
-            </svg>
-        </button>
-        <div class="hidden w-full md:flex md:items-center md:w-auto" id="navbar-default">
-            <ul
-                class="font-bold text-sm lg:text-base space-x-0 flex flex-col p-4 mt-4 rounded-lg md:rounded-full md:flex-row md:items-center lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0">
-                <NavbarItem client:load isActive={currentPath === "/"} href="/" >BERANDA</NavbarItem>
-                <NavbarItem client:load isActive={currentPath === "/layanan/"} href="/layanan">LAYANAN</NavbarItem>
-                <NavbarItem client:load isActive={currentPath === "/portofolio/"} href="/portofolio">PORTOFOLIO</NavbarItem>
-                <NavbarItem client:load isActive={currentPath === "/tentang/"} href="/tentang">TENTANG</NavbarItem>
-                <NavbarItem client:load isActive={currentPath === "/kontak/"} href="/kontak">KONTAK</NavbarItem>
-            </ul>
-           
-        </div>
+  class="m-4 fixed top-0 left-0 right-0 z-20 bg-white rounded-xl drop-shadow-lg border border-gray-200 dark:border-none dark:bg-black dark:drop-shadow-white/40 dark:drop-shadow-lg"
+>
+  <div class="max-w-screen-xl flex flex-wrap items-center mx-auto px-4 py-2">
+    <a
+      href="/"
+      class="flex items-center space-x-3 rtl:space-x-reverse font-Barlow-Semi-Condensed mr-auto"
+    >
+      <span
+        class="self-center text-2xl font-bold whitespace-nowrap dark:text-white"
+        >DECADE <span class="text-lg">inc</span></span
+      >
+    </a>
+    <button
+      data-collapse-toggle="navbar-default"
+      type="button"
+      class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
+      aria-controls="navbar-default"
+      aria-expanded="false"
+    >
+      <span class="sr-only">Open main menu</span>
+      <svg
+        class="w-5 h-5"
+        aria-hidden="true"
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 17 14"
+      >
+        <path
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M1 1h15M1 7h15M1 13h15"></path>
+      </svg>
+    </button>
+    <div
+      class="hidden w-full md:flex md:items-center md:w-auto"
+      id="navbar-default"
+    >
+      <ul
+        class="font-bold text-sm lg:text-base space-x-0 flex flex-col p-4 mt-4 rounded-lg md:rounded-full md:flex-row md:items-center lg:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0"
+      >
+        <NavbarItem client:load isActive={currentPath === "/"} href="/"
+          >BERANDA</NavbarItem
+        >
+        <NavbarItem
+          client:load
+          isActive={currentPath === "/layanan/"}
+          href="/layanan">LAYANAN</NavbarItem
+        >
+        <NavbarItem
+          client:load
+          isActive={currentPath === "/portofolio/"}
+          href="/portofolio">PORTOFOLIO</NavbarItem
+        >
+        <NavbarItem
+          client:load
+          isActive={currentPath === "/tentang/"}
+          href="/tentang">TENTANG</NavbarItem
+        >
+        <NavbarItem
+          client:load
+          isActive={currentPath === "/kontak/"}
+          href="/kontak">KONTAK</NavbarItem
+        >
+      </ul>
     </div>
+  </div>
 </nav>
+<div class="fixed right-5 bottom-5 lg:right-10 lg:bottom-10 z-50 flex gap-2">
+  <a href="https://wa.me/6281365177223">
+    <Image src={whatsappImage} class="block w-12 sm:w-16" alt="" />
+  </a>
+</div>

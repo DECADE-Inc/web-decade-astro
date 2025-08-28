@@ -27,8 +27,8 @@ export default function KontakComponent({ children }: { children: ReactNode }) {
   return (
     <div className="mt-28 md:mt-42 mb-2 min-h-screen sm:relative pb-16 px-4 sm:p-0">
       <h2 className="text-2xl text-center mb-4 font-bold tracking-tight dark:text-white">
-            Hubungi Kami ✈️
-        </h2>
+        Hubungi Kami ✈️
+      </h2>
       <Formik
         initialValues={{
           subject: "Pesan Baru dari website Decade Inc",
@@ -177,6 +177,7 @@ export default function KontakComponent({ children }: { children: ReactNode }) {
         )}
       </Formik>
       {children}
+      
     </div>
   );
 }
