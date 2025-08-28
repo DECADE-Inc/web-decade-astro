@@ -14,6 +14,7 @@ import ranuImg from "../../../../public/img/profile/ranu.jpg"
 import abdulImg from "../../../../public/img/profile/abdul.jpg"
 import dimasImg from "../../../../public/img/profile/dimas.jpg"
 import mayImg from "../../../../public/img/profile/may.jpg"
+import wagiImg from "../../../../public/img/profile/wagianto.jpeg"
 import placeholder from "../../../../public/img/profile/profil.png"
 
 
@@ -77,7 +78,7 @@ const anggota = {
       id: "developer-6",
       name: "Wagianto",
       role: "Member",
-      image: placeholder.src,
+      image: wagiImg.src,
     },
     {
       id: "developer-7",
