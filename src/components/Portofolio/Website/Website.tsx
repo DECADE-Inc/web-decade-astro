@@ -35,16 +35,16 @@ export default function Website() {
         />
       </div>
       <div className="mt-16 lg:mt-24 lg:py-16 h-auto text-center space-y-6 relative p-4 mb-32 lg:mb-64 flex justify-center items-center flex-col">
-        <div className="text-xl lg:text-4xl  font-bold lg:text-white">
-          servicecenterelectrolux.com
-        </div>
+        <a href="https://www.servislokal.com" className="text-xl lg:text-4xl  font-bold lg:text-white">
+          servislokal.com
+        </a>
         <img
           className="block mx-auto"
           src="/img/portofolio/website/web-servis.png"
           alt=""
         />
         <div className="max-w-md mx-auto lg:text-lg font-semibold lg:text-white">
-          Service center electrolux merupakan website landing page yang dibuat
+          Service lokal merupakan website landing page yang dibuat
           untuk mempromosikan layanan perbaikan produk-produk electrolux
         </div>
         <a
